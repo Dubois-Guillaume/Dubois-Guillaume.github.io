@@ -1,12 +1,126 @@
 <!DOCTYPE html>
+<!-- fiare les pages complete pour ensuite gerer la navbar -->
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./index.css" rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com"></script>
         <title>Dubois Guillaume</title>
     </head>
-    <body>
-        <h1>Bienvenue sur mon portfolio</h1>
+    <body class="bg-[#0C0C0C]">
+        <header
+            class="w-[100%] h-[100px] bg-[#2EB254] flex justify-center items-center">
+            <nav
+                class="w-[80%] flex flex-row justify-between items-center text-4xl">
+                <h1 class="">Bienvenue !</h1>
+                <div class="w-1/3 flex flex-row justify-between">
+                    <div class="dropdown w-[250px] inline-block relative">
+                        <a class="inline-flex items-center py-2 px-4">
+                            <span>Sommaire</span>
+                            <svg
+                                class="fill-current h-8 w-8"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu absolute hidden pt-1">
+                            <li class="">
+                                <a
+                                    href="#whoAmIAnchor"
+                                    class="rounded-t bg-[#2EB254] hover:bg-[#228a40] py-2 px-4 block whitespace-no-wrap"
+                                    >Qui suis-je ?</a
+                                >
+                            </li>
+                            <li class="">
+                                <a
+                                    class="bg-[#2EB254] hover:bg-[#228a40] py-2 px-4 block whitespace-no-wrap"
+                                    href="#schoolCareer"
+                                    >Parcours</a
+                                >
+                            </li>
+                            <li class="">
+                                <a
+                                    class="bg-[#2EB254] hover:bg-[#228a40] py-2 px-4 block whitespace-no-wrap"
+                                    href="#separator3"
+                                    >Projets</a
+                                >
+                            </li>
+                            <li class="">
+                                <a
+                                    class="bg-[#2EB254] hover:bg-[#228a40] py-2 px-4 block whitespace-no-wrap"
+                                    href="#separator4"
+                                    >Hobbies</a
+                                >
+                            </li>
+                            <li class="">
+                                <a
+                                    class="rounded-b bg-[#2EB254] hover:bg-[#228a40] py-2 px-4 block whitespace-no-wrap"
+                                    href="#separator5"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <h2>
+                        <a href="asset/CVGuillaumeDubois.pdf" target="_blank"
+                            >Mon CV</a
+                        >
+                    </h2>
+                </div>
+            </nav>
+        </header>
+        <div
+            id="Reception"
+            class="w-[100%] h-screen flex flex-row justify-evenly">
+            <div id="receptionLeft" class="w-1/2 flex text-center items-center">
+                <div class="w-full pl-20">
+                    <h1 class="text-[#2EB254] text-6xl">Guillaume Dubois</h1>
+                    <h2 class="text-white text-4xl w-full">
+                        Developpeur web junior
+                    </h2>
+                </div>
+            </div>
+            <div
+                id="receptionRight"
+                class="w-1/2 flex justify-center items-center pr-20">
+                <img src="./asset/svg/receptionWebDev.svg" alt="web dev" />
+            </div>
+        </div>
+        <div id="whoAmIAnchor"></div>
+        <div id="separator1" class="w-full h-8 bg-[#2EB254]"></div>
+        <div id="whoAmI" class="w-[100%] h-screen text-white">
+            <div id="whoAmITitle">
+                <h2>Qui suis-je ?</h2>
+            </div>
+            <div id="whoAmIText">
+                <p>
+                    Je m'appelle Dubois Guillaume, j'ai 22 ans et je suis
+                    actuellement en première année à la WebAcadémie d'Epitech.
+                </p>
+
+                <p>
+                    Mon parcours est loin d'être linéaire, mais je me suis
+                    toujours donné à 100% pour les projets que je voulais
+                    réaliser et j'adore apprendre dans tous les domaines.
+                </p>
+
+                <p>'Ma détermination me mènera à tous mes buts' - c'est moi.</p>
+            </div>
+            <div id="whoAmISVG">
+                <img src="./asset/svg/Learning.svg" alt="Who am I ?" />
+            </div>
+        </div>
+        <div id="separator2" class="w-full h-8 bg-[#2EB254]"></div>
+        <div id="schoolCareer" class="w-[100%] h-[847px] text-white"></div>
+        <div id="separator3" class="w-full h-8 bg-[#2EB254]"></div>
+        <div id="projects" class="w-[100%] h-[847px] text-white"></div>
+        <div id="separator4" class="w-full h-8 bg-[#2EB254]"></div>
+        <div id="hobbies" class="w-[100%] h-[847px] text-white"></div>
+        <div id="separator5" class="w-full h-8 bg-[#2EB254]"></div>
+        <div id="contact" class="w-[100%] h-[847px] text-white"></div>
     </body>
 </html>

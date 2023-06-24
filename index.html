@@ -11,7 +11,7 @@
     </head>
     <body class="bg-[#0C0C0C]">
         <header
-            class="w-[100%] h-[100px] bg-[#2EB254] flex justify-center items-center">
+            class="fixed z-50 w-[100%] h-[90px] bg-[#2EB254] flex justify-center items-center">
             <nav
                 class="w-[80%] flex flex-row justify-between items-center text-4xl">
                 <h1 class="">Bienvenue !</h1>
@@ -30,7 +30,7 @@
                         <ul class="dropdown-menu absolute hidden pt-1">
                             <li class="">
                                 <a
-                                    href="#whoAmIAnchor"
+                                    href="#separator1"
                                     class="rounded-t bg-[#2EB254] hover:bg-[#228a40] py-2 px-4 block whitespace-no-wrap"
                                     >Qui suis-je ?</a
                                 >
@@ -38,7 +38,7 @@
                             <li class="">
                                 <a
                                     class="bg-[#2EB254] hover:bg-[#228a40] py-2 px-4 block whitespace-no-wrap"
-                                    href="#schoolCareer"
+                                    href="#separator2"
                                     >Parcours</a
                                 >
                             </li>
@@ -90,7 +90,6 @@
                 <img src="./asset/svg/receptionWebDev.svg" alt="web dev" />
             </div>
         </div>
-        <div id="whoAmIAnchor"></div>
         <div id="separator1" class="w-full h-8 bg-[#2EB254]"></div>
         <div id="whoAmI" class="w-[100%] h-screen text-white pt-14 pl-14">
             <div id="whoAmITitle" class="flex flex-row mb-16">
@@ -114,16 +113,141 @@
                 <p>'Ma détermination me mènera à tous mes buts' - c'est moi.</p>
             </div>
             <div id="whoAmISVG" class="float-right mt-[200px]">
-                <img src="./asset/svg/Learning.svg" alt="Who am I ?" />
+                <img src="./asset/svg/whoAmI.svg" alt="Who am I ?" />
             </div>
         </div>
         <div id="separator2" class="w-full h-8 bg-[#2EB254]"></div>
-        <div id="schoolCareer" class="w-[100%] h-[847px] text-white"></div>
+        <div id="schoolCareer" class="w-[100%] h-screen text-white pt-14 pl-14">
+            <div id="schoolCareerTitle" class="flex flex-row">
+                <h2 class="text-5xl">Parcours scolaire</h2>
+                <div class="w-4 h-10 bg-[#2EB254] ml-4"></div>
+            </div>
+            <div id="schoolCareerContent">
+                <div
+                    id="schoolTop"
+                    class="flex flex-row justify-between items-center h-1/2">
+                    <div id="schoolTopText" class="text-2xl">
+                        <p>
+                            J'ai un parcours scolaire pas très linéaire, j'ai
+                            étudié plusieurs domaines sans rapport direct les
+                            uns avec les autres:
+                        </p>
+                        <br />
+                        <ul>
+                            <li>
+                                J’ai étudié 2 en Hôtellerie-Restauration a
+                                Michel Servet
+                            </li>
+                            <br />
+                            <li>
+                                Je me suis ensuite diriger vers l’informatique
+                                en STI2D au Lycée César Baggio
+                            </li>
+                            <br />
+                            <li>
+                                J’ai fini mes années de lycée en MEI (
+                                Maintenance d’Équipements Industriel ) au Lycée
+                                Jules Antonini
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        id="schoolTopSVG"
+                        class="w-1/3 flex justify-center items-center">
+                        <img
+                            src="./asset/svg/Parcours1.svg"
+                            alt="School career"
+                            class="w-4/5" />
+                    </div>
+                </div>
+                <div
+                    id="schoolBottom"
+                    class="flex flex-row justify-between items-center h-1/2">
+                    <div
+                        id="schoolBottomSVG"
+                        class="w-1/3 flex justify-center items-center">
+                        <img
+                            src="./asset/svg/Parcours2.svg"
+                            alt="School career"
+                            class="w-4/5" />
+                    </div>
+                    <div id="schoolBottomText" class="text-2xl mr-2">
+                        <p>
+                            Puis j’ai voulue apprendre a créer les differents
+                            outils et sites que j’utilisais tous les jours, j’ai
+                            donc commencer par:
+                        </p>
+                        <br />
+                        <ul>
+                            <li>
+                                BTech, 6 semaines d’initiation ( HTML, CSS )
+                            </li>
+                            <br />
+                            <li>
+                                Le programme Z, 3 mois de bootcamp ( JS, MERN )
+                            </li>
+                            <br />
+                            <li>
+                                WebAcadémie by Epitech, 10 mois de formation, 14
+                                mois d’alternance, ( JS, MERN, PHP, Symfony )
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="separator3" class="w-full h-8 bg-[#2EB254]"></div>
-        <div id="projects" class="w-[100%] h-[847px] text-white"></div>
+        <div id="projects" class="w-[100%] h-screen text-white pt-14 pl-14">
+            <div
+                id="schoolCareerTitle"
+                class="flex flex-row justify-center mb-12">
+                <h2 class="text-5xl">Mes projets</h2>
+                <div class="w-4 h-10 bg-[#2EB254] ml-4"></div>
+            </div>
+            <div
+                id="projectsContent"
+                class="grid grid-cols-2 grid-rows-2 gap-y-4">
+                <div id="twitter" class="bg-red-500 justify-self-center">
+                    <div id="twitterScreen">
+                        <img
+                            src="./asset/projectsScreen/Twitter.png"
+                            alt="Twitter projects" />
+                    </div>
+                    <div id="twitterDescription" class="hidden"></div>
+                </div>
+                <div id="pushswap" class="bg-blue-500 justify-self-center">
+                    <div id="pushswapScreen">
+                        <img
+                            src="./asset/projectsScreen/Pushswap.png"
+                            alt="pushswap projects" />
+                    </div>
+                    <div id="pushswapDescription" class="hidden"></div>
+                </div>
+                <div id="snapchat" class="bg-green-500 justify-self-center">
+                    <div id="snapchatScreen">
+                        <img
+                            src="./asset/projectsScreen/Snapchat.png"
+                            alt="snapchat projects" />
+                    </div>
+                    <div id="snapchatDescription" class="hidden"></div>
+                </div>
+                <div id="spotiflop" class="bg-yellow-500 justify-self-center">
+                    <div id="spotiflopScreen">
+                        <img
+                            src="./asset/projectsScreen/Spotiflop.png"
+                            alt="spotiflop projects" />
+                    </div>
+                    <div id="spotiflopDescription" class="hidden"></div>
+                </div>
+            </div>
+        </div>
         <div id="separator4" class="w-full h-8 bg-[#2EB254]"></div>
-        <div id="hobbies" class="w-[100%] h-[847px] text-white"></div>
+        <div
+            id="hobbies"
+            class="w-[100%] h-screen text-white pt-14 pl-14"></div>
         <div id="separator5" class="w-full h-8 bg-[#2EB254]"></div>
-        <div id="contact" class="w-[100%] h-[847px] text-white"></div>
+        <div
+            id="contact"
+            class="w-[100%] h-screen text-white pt-14 pl-14"></div>
     </body>
 </html>

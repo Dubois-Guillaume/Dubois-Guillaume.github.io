@@ -1,0 +1,1 @@
+var s;const a=((s=globalThis.__sveltekit_1ixmkzi)==null?void 0:s.base)??"/Dubois-Guillaume.github.io";var i;const e=((i=globalThis.__sveltekit_1ixmkzi)==null?void 0:i.assets)??a;export{e as a,a as b};

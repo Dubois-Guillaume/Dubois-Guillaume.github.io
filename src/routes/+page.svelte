@@ -1,18 +1,17 @@
 <script>
 // @ts-nocheck
-import { base } from "$app/paths";
-
-    import Reception from "$lib/assets/svg/receptionWebDev.svg";
-    import WhoAmI from "$lib/assets/svg/whoAmI.svg";
-    import Parcours1 from "$lib/assets/svg/Parcours1.svg";
-    import Parcours2 from "$lib/assets/svg/Parcours2.svg";
-    import Skateboard from "$lib/assets/svg/Skateboard.svg";
-    import Music from "$lib/assets/svg/Musique.svg";
-    import Twitter from "$lib/assets/projectsScreen/Twitter.png";
-    import Puissance4 from "$lib/assets/projectsScreen/Puissance4.png";
-    import BSQ from "$lib/assets/projectsScreen/BSQ.png";
-    import PetHeaven from "$lib/assets/projectsScreen/PetHeaven.png";
-	import CV from "$lib/assets/CVGuillaumeDubois.pdf";
+        import { base } from "$app/paths";
+    // import Reception from "$lib/assets/svg/receptionWebDev.svg";
+    // import WhoAmI from "$lib/assets/svg/whoAmI.svg";
+    // import Parcours1 from "$lib/assets/svg/Parcours1.svg";
+    // import Parcours2 from "$lib/assets/svg/Parcours2.svg";
+    // import Skateboard from "$lib/assets/svg/Skateboard.svg";
+    // import Music from "$lib/assets/svg/Musique.svg";
+    // import Twitter from "$lib/assets/projectsScreen/Twitter.png";
+    // import Puissance4 from "$lib/assets/projectsScreen/Puissance4.png";
+    // import BSQ from "$lib/assets/projectsScreen/BSQ.png";
+    // import PetHeaven from "$lib/assets/projectsScreen/PetHeaven.png";
+	// import CV from "$lib/assets/CVGuillaumeDubois.pdf";
 
 	let isNavOpen = false;
 </script>
@@ -62,7 +61,7 @@ import { base } from "$app/paths";
 				</ul>
             </div>
             <h2 class="text-lg md:text-xl mr-6 md:mr-4">
-                <a href={CV} target="_blank">Mon CV</a>
+                <a href="{base}/assets/CVGuillaumeDubois.pdf" target="_blank">Mon CV</a>
             </h2>
         </div>
     </nav>
@@ -81,7 +80,7 @@ import { base } from "$app/paths";
 
     <!-- Partie droite avec l'image, masquée sur les petits écrans -->
     <div id="receptionRight" class="w-full md:w-1/2 flex justify-center items-center pr-4 md:pr-20">
-        <img src="{Reception}" alt="Guillaume Dubois" class="hidden md:block max-w-full h-auto" />
+        <img src="{base}/assets/svg/receptionWebDev.svg" alt="Guillaume Dubois" class="hidden md:block max-w-full h-auto" />
     </div>
 </div>
 
@@ -109,7 +108,7 @@ import { base } from "$app/paths";
     </div>
 
     <div id="whoAmISVG" class="mt-10 flex justify-center md:justify-end">
-        <img src={WhoAmI} alt="Who am I ?" class="hidden md:block max-w-full h-auto" />
+        <img src="{base}/assets/svg/whoAmI.svg" alt="Who am I ?" class="hidden md:block max-w-full h-auto" />
     </div>
 </div>
 
@@ -133,13 +132,13 @@ import { base } from "$app/paths";
                 </ul>
             </div>
             <div id="schoolTopSVG" class="w-full md:w-1/3 flex justify-center items-center mt-4 md:mt-0">
-                <img src={Parcours1} alt="School career" class="hidden md:block w-4/5 max-w-xs" />
+                <img src="{base}/assets/svg/Parcours1.svg" alt="School career" class="hidden md:block w-4/5 max-w-xs" />
             </div>
         </div>
         
         <div id="schoolBottom" class="flex flex-col md:flex-row justify-between items-center h-auto">
             <div id="schoolBottomSVG" class="w-full md:w-1/3 flex justify-center items-center mt-4 md:mt-0">
-                <img src={Parcours2} alt="School career" class="hidden md:block w-4/5 max-w-xs" />
+                <img src="{base}/assets/svg/Parcours2.svg" alt="School career" class="hidden md:block w-4/5 max-w-xs" />
             </div>
             <div id="schoolBottomText" class="text-xl md:text-2xl w-full md:w-2/3 mr-2">
                 <p>
@@ -167,37 +166,37 @@ import { base } from "$app/paths";
 
     <div id="projectsContent" class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div id="twitter" class="text-center">
-            <a href="{base}/https://github.com/EpitechWebAcademiePromo2024/W-WEB-090-LIL-1-1-academie-quentin.guidez" target="_blank">
+            <a href="https://github.com/EpitechWebAcademiePromo2024/W-WEB-090-LIL-1-1-academie-quentin.guidez" target="_blank">
             <div id="twitterScreen" class="shadow-md rounded-lg overflow-hidden">
                 <p class="w-full bg-[#2EB254] rounded-t-lg text-center text-2xl">Twitter</p>
-                <img src={Twitter} alt="Twitter projects" class="w-full h-96" />
+                <img src="{base}/assets/projectsScreen/Twitter.png" alt="Twitter projects" class="w-full h-96" />
             </div>
         </a>
         </div>
 
         <div id="puissance4" class="text-center">
-            <a href="{base}/https://github.com/EpitechWebAcademiePromo2024/W-JSC-501-LIL-1-1-puissance4-guillaume.dubois" target="_blank">
+            <a href="https://github.com/EpitechWebAcademiePromo2024/W-JSC-501-LIL-1-1-puissance4-guillaume.dubois" target="_blank">
             <div id="puissance4Screen" class="shadow-md rounded-lg overflow-hidden">
                 <p class="w-full bg-[#2EB254] rounded-t-lg text-center text-2xl">Puissance4</p>
-                <img src={Puissance4} alt="Puissance4 projects" class="w-full h-96" />
+                <img src="{base}/assets/projectsScreen/Puissance4.png" alt="Puissance4 projects" class="w-full h-96" />
             </div>
         </a>
         </div>
 
         <div id="BSQ" class="text-center">
-            <a href="{base}/https://github.com/EpitechWebAcademiePromo2024/W-ALG-502-LIL-2-1-bsq-guillaume.dubois" target="_blank">
+            <a href="https://github.com/EpitechWebAcademiePromo2024/W-ALG-502-LIL-2-1-bsq-guillaume.dubois" target="_blank">
             <div id="BSQScreen" class="shadow-md rounded-lg overflow-hidden">
                 <p class="w-full bg-[#2EB254] rounded-t-lg text-center text-2xl">BSQ</p>
-                <img src={BSQ} alt="BSQ projects" class="w-full h-96" />
+                <img src="{base}/assets/projectsScreen/BSQ.png" alt="BSQ projects" class="w-full h-96" />
             </div>
         </a>
         </div>
 
         <div id="petHeaven" class="text-center">
-            <a href="{base}/https://github.com/EpitechWebAcademiePromo2024/W-WEB-502-LIL-2-1-ecommerce-adrien.ritter" target="_blank">
+            <a href="https://github.com/EpitechWebAcademiePromo2024/W-WEB-502-LIL-2-1-ecommerce-adrien.ritter" target="_blank">
             <div id="petHeavenScreen" class="shadow-md rounded-lg overflow-hidden">
                 <p class="w-full bg-[#2EB254] rounded-t-lg text-center text-2xl">PetHeaven</p>
-                <img src={PetHeaven} alt="PetHeaven projects" class="w-full h-96" />
+                <img src="{base}/assets/projectsScreen/PetHeaven.png" alt="PetHeaven projects" class="w-full h-96" />
             </div>
         </a>
         </div>
@@ -215,7 +214,7 @@ import { base } from "$app/paths";
     <div id="hobbiesContent" class="h-auto">
         <div id="hobbiesTop" class="flex flex-col md:flex-row justify-between items-center mb-8">
             <div id="hobbiesTopSVG" class="w-full md:w-1/3 flex justify-center mb-4 md:mb-0">
-                <img src={Skateboard} alt="Skateboard" class="hidden md:block w-4/5" />
+                <img src="{base}/assets/svg/Skateboard.svg" alt="Skateboard" class="hidden md:block w-4/5" />
             </div>
             <div id="hobbiesTopText" class="text-4xl w-full md:w-2/3 leading-[50px]">
                 <p>
@@ -237,7 +236,7 @@ import { base } from "$app/paths";
                 </p>
             </div>
             <div id="hobbiesBottomSVG" class="w-full md:w-1/3 flex justify-center items-center">
-                <img src={Music} alt="Music" class="hidden md:block w-3/5" />
+                <img src="{base}/assets/svg/Musique.svg" alt="Music" class="hidden md:block w-3/5" />
             </div>
         </div>
     </div>

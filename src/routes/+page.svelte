@@ -1,5 +1,6 @@
 <script>
 // @ts-nocheck
+import { base } from "$app/paths";
 
     import Reception from "$lib/assets/svg/receptionWebDev.svg";
     import WhoAmI from "$lib/assets/svg/whoAmI.svg";
@@ -17,7 +18,7 @@
 </script>
 <header class="fixed z-50 w-full h-20 bg-[#2EB254] flex justify-center items-center">
     <nav class="w-full max-w-screen-lg flex flex-row justify-between items-center text-xl md:text-2xl">
-        <a href="#Reception" class="hidden md:block">Bienvenue !</a>
+        <a href="{base}/#Reception" class="hidden md:block">Bienvenue !</a>
         <div class="flex items-center w-full justify-between md:w-1/3">
             <div class="relative inline-block">
                 <button class="inline-flex items-center py-2 px-4 md:ml-[-12px]" on:click={() => {isNavOpen = !isNavOpen}}>
@@ -29,7 +30,7 @@
                 <ul class={`absolute pt-1 ${isNavOpen ? "" : "hidden"} bg-[#2EB254]`}>
 					<li class="">
 						<a
-							href="#separator1"
+							href="{base}/#separator1"
 							class="rounded-t bg-[#2EB254] hover:bg-[#228a40] py-2 px-4 block whitespace-no-wrap"
 							>Qui suis-je ?</a
 						>
@@ -37,25 +38,25 @@
 					<li class="">
 						<a
 							class="bg-[#2EB254] hover:bg-[#228a40] py-2 px-4 block whitespace-no-wrap"
-							href="#separator2">Parcours</a
+							href="{base}/#separator2">Parcours</a
 						>
 					</li>
 					<li class="">
 						<a
 							class="bg-[#2EB254] hover:bg-[#228a40] py-2 px-4 block whitespace-no-wrap"
-							href="#separator3">Projets</a
+							href="{base}/#separator3">Projets</a
 						>
 					</li>
 					<li class="">
 						<a
 							class="bg-[#2EB254] hover:bg-[#228a40] py-2 px-4 block whitespace-no-wrap"
-							href="#separator4">Hobbies</a
+							href="{base}/#separator4">Hobbies</a
 						>
 					</li>
 					<li class="">
 						<a
 							class="rounded-b bg-[#2EB254] hover:bg-[#228a40] py-2 px-4 block whitespace-no-wrap"
-							href="#separator5">Contact</a
+							href="{base}/#separator5">Contact</a
 						>
 					</li>
 				</ul>
@@ -166,7 +167,7 @@
 
     <div id="projectsContent" class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div id="twitter" class="text-center">
-            <a href="https://github.com/EpitechWebAcademiePromo2024/W-WEB-090-LIL-1-1-academie-quentin.guidez" target="_blank">
+            <a href="{base}/https://github.com/EpitechWebAcademiePromo2024/W-WEB-090-LIL-1-1-academie-quentin.guidez" target="_blank">
             <div id="twitterScreen" class="shadow-md rounded-lg overflow-hidden">
                 <p class="w-full bg-[#2EB254] rounded-t-lg text-center text-2xl">Twitter</p>
                 <img src={Twitter} alt="Twitter projects" class="w-full h-96" />
@@ -175,7 +176,7 @@
         </div>
 
         <div id="puissance4" class="text-center">
-            <a href="https://github.com/EpitechWebAcademiePromo2024/W-JSC-501-LIL-1-1-puissance4-guillaume.dubois" target="_blank">
+            <a href="{base}/https://github.com/EpitechWebAcademiePromo2024/W-JSC-501-LIL-1-1-puissance4-guillaume.dubois" target="_blank">
             <div id="puissance4Screen" class="shadow-md rounded-lg overflow-hidden">
                 <p class="w-full bg-[#2EB254] rounded-t-lg text-center text-2xl">Puissance4</p>
                 <img src={Puissance4} alt="Puissance4 projects" class="w-full h-96" />
@@ -184,7 +185,7 @@
         </div>
 
         <div id="BSQ" class="text-center">
-            <a href="https://github.com/EpitechWebAcademiePromo2024/W-ALG-502-LIL-2-1-bsq-guillaume.dubois" target="_blank">
+            <a href="{base}/https://github.com/EpitechWebAcademiePromo2024/W-ALG-502-LIL-2-1-bsq-guillaume.dubois" target="_blank">
             <div id="BSQScreen" class="shadow-md rounded-lg overflow-hidden">
                 <p class="w-full bg-[#2EB254] rounded-t-lg text-center text-2xl">BSQ</p>
                 <img src={BSQ} alt="BSQ projects" class="w-full h-96" />
@@ -193,7 +194,7 @@
         </div>
 
         <div id="petHeaven" class="text-center">
-            <a href="https://github.com/EpitechWebAcademiePromo2024/W-WEB-502-LIL-2-1-ecommerce-adrien.ritter" target="_blank">
+            <a href="{base}/https://github.com/EpitechWebAcademiePromo2024/W-WEB-502-LIL-2-1-ecommerce-adrien.ritter" target="_blank">
             <div id="petHeavenScreen" class="shadow-md rounded-lg overflow-hidden">
                 <p class="w-full bg-[#2EB254] rounded-t-lg text-center text-2xl">PetHeaven</p>
                 <img src={PetHeaven} alt="PetHeaven projects" class="w-full h-96" />
